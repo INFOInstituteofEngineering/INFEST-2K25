@@ -1,4 +1,4 @@
-import { RxCross2 as Cross } from "react-icons/rx";
+//import { RxCross2 as Cross } from "react-icons/rx";
 import { IoArrowForwardOutline as Arrow } from "react-icons/io5";
 
 import {Link} from "react-router-dom";

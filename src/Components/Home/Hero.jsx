@@ -1,5 +1,5 @@
 import React from "react";
-import InfoLogo from "../../assets/logo.png";
+import Logo from "../../assets/logo.png";
 import ParticleComponent from "./Particles";
 import { Link } from 'react-router-dom';
 
@@ -21,7 +21,7 @@ const Hero = ({ scrollToContact }) => {
                 <div>
 
                     <div className=" relative">
-                        <div className="mx-auto mt-[7%] pb-10 z-20 flex flex-col items-center justify-center md:h-screen">
+                        <div className="pt-20 mx-auto mt-[7%] pb-10 z-20 flex flex-col items-center justify-center md:h-screen">
                             <h1
                                 className="text-center my-[1.5%] text-[25px] text-blue-500 font-bold"
                                 style={NotSelected}
@@ -30,7 +30,7 @@ const Hero = ({ scrollToContact }) => {
                             </h1>
 
                             <img
-                                src={InfoLogo}
+                                src={Logo}
                                 alt="Infest_2k25"
                                 style={NotSelected}
                                 className="mx-auto w-[30%] sm:w-[60%]"
