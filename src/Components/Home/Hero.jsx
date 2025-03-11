@@ -43,11 +43,11 @@ const Hero = ({ scrollToContact }) => {
                             </h1>
 
                             <div className=" flex flex-row sm:flex-col  justify-evenly items-center mx-auto text-center my-[1%] w-[45%] font-semibold">
-                                <div className=" text-[20px] hover:shadow-lg sm:my-[5%] w-[250px] px-[30px] py-[15px] border-[2px] rounded-[8px] text-white bg-blue-500 border-blue-500 cursor-pointer">
+                                <div className=" text-[20px] hover:shadow-lg sm:my-[5%] w-[250px] px-[30px] py-[15px] border-[2px] rounded-[50px] text-white bg-blue-500 border-blue-500 cursor-pointer hover:bg-black transform transition-all duration-300 hover:scale-105">
                                     <Link to={'/event/tech'}>Register&#160;Events</Link>
                                 </div>
 
-                                <div className=" text-[20px] hover:shadow-lg sm:my-[5%] w-[250px] px-[30px] py-[15px] border-[2px] rounded-[8px] border-green-500 cursor-pointer text-green-500"
+                                <div className=" text-[20px] hover:shadow-lg sm:my-[5%] w-[250px] px-[30px] py-[15px] border-[2px] rounded-[50px] text-white bg-green-500 border-black-500 cursor-pointer hover:bg-black transform transition-all duration-300 hover:scale-105"
                                 >
                                     <Link to={'#contact'} onClick={() => scrollToContact()}>Contact&#160;Us</Link>
                                 </div>
