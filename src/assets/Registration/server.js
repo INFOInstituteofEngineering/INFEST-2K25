@@ -4,14 +4,17 @@ const mongoose = require('mongoose');
 const Razorpay = require('razorpay');
 const nodemailer = require('nodemailer');
 
+
 const app = express();
 app.use(express.json());
 app.use(express.static('public'));
+
 
 // MongoDB Connection
 mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('Connected to MongoDB'))
     .catch(err => console.error(err));
+
 
 // Registration Schema
 const registrationSchema = new mongoose.Schema({
@@ -31,11 +34,13 @@ const registrationSchema = new mongoose.Schema({
 });
 const Registration = mongoose.model('Registration', registrationSchema);
 
+
 // Razorpay Instance
 const razorpay = new Razorpay({
     key_id: process.env.RAZORPAY_KEY_ID,
     key_secret: process.env.RAZORPAY_KEY_SECRET
 });
+
 
 // Nodemailer Setup
 const transporter = nodemailer.createTransport({
@@ -45,6 +50,7 @@ const transporter = nodemailer.createTransport({
         pass: process.env.EMAIL_PASS
     }
 });
+
 
 // Create Razorpay Order
 app.post('/create-order', async (req, res) => {
@@ -61,10 +67,12 @@ app.post('/create-order', async (req, res) => {
     }
 });
 
+
 // Save Registration and Send Email
 app.post('/register', async (req, res) => {
     const registration = new Registration(req.body);
     await registration.save();
+
 
     const mailOptions = {
         from: process.env.EMAIL_USER,
@@ -75,12 +83,15 @@ app.post('/register', async (req, res) => {
         }\n\nThank you for registering!`
     };
 
+
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) console.error(error);
         else console.log('Email sent: ' + info.response);
     });
 
+
     res.json({ message: 'Registration saved' });
 });
+
 
 app.listen(3000, () => console.log('Server running on port 3000'));

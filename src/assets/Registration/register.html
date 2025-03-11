@@ -17,6 +17,7 @@
             justify-content: center;
         }
 
+
         .header {
             width: 100%;
             padding: 20px;
@@ -30,10 +31,12 @@
             z-index: 1000;
         }
 
+
         .logo {
             height: 80px;
             margin-left: 20px;
         }
+
 
         .container {
             max-width: 800px;
@@ -46,6 +49,7 @@
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
         }
 
+
         h1 {
             text-align: center;
             color: white;
@@ -53,9 +57,11 @@
             font-family: 'Trebuchet MS';
         }
 
+
         .form-group {
             margin-bottom: 20px;
         }
+
 
         label {
             display: block;
@@ -63,6 +69,7 @@
             color: white;
             font-weight: 500;
         }
+
 
         input, select, textarea {
             width: 100%;
@@ -74,11 +81,13 @@
             transition: all 0.3s ease;
         }
 
+
         input:focus, select:focus, textarea:focus {
             outline: none;
             background-color: white;
             box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
         }
+
 
         select {
             appearance: none;
@@ -88,9 +97,11 @@
             padding-right: 40px;
         }
 
+
         .hidden {
             display: none;
         }
+
 
         /* Checkbox styling */
         .checkbox-container {
@@ -103,16 +114,19 @@
             padding: 15px;
         }
 
+
         .checkbox-item {
             display: flex;
             align-items: center;
             margin-bottom: 10px;
         }
 
+
         .checkbox-item input[type="checkbox"] {
             width: auto;
             margin-right: 10px;
         }
+
 
         .checkbox-item label {
             margin-bottom: 0;
@@ -120,11 +134,13 @@
             font-weight: normal;
         }
 
+
         .payment-options {
             display: flex;
             gap: 15px;
             margin-top: 10px;
         }
+
 
         .payment-option {
             flex: 1;
@@ -136,15 +152,18 @@
             transition: all 0.3s ease;
         }
 
+
         .payment-option:hover {
             background-color: white;
             transform: translateY(-3px);
         }
 
+
         .payment-option.selected {
             background-color: #4CAF50;
             color: white;
         }
+
 
         button {
             display: block;
@@ -161,11 +180,13 @@
             transition: all 0.3s ease;
         }
 
+
         button:hover {
             background-color: #45a049;
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
+
 
         .success-message {
             text-align: center;
@@ -176,6 +197,7 @@
             color: white;
         }
 
+
         .registration-number {
             font-size: 24px;
             font-weight: bold;
@@ -183,11 +205,13 @@
             margin: 10px 0;
         }
 
+
         .loader {
             display: none;
             text-align: center;
             margin: 20px 0;
         }
+
 
         .loader div {
             width: 40px;
@@ -199,18 +223,21 @@
             animation: spin 1s ease-in-out infinite;
         }
 
+
         @keyframes spin {
             to { transform: rotate(360deg); }
         }
+
 
         @media (max-width: 600px) {
             .container {
                 padding: 20px;
             }
-            
+           
             .payment-options {
                 flex-direction: column;
             }
+
 
             .checkbox-container {
                 grid-template-columns: 1fr;
@@ -223,35 +250,36 @@
         <img src="/src/assets/logo.png" alt="Event Logo" class="logo">
     </div>
 
+
     <div class="container">
         <h1>Event Registration</h1>
-        
+       
         <div id="registration-form">
             <div class="form-group">
                 <label for="name">Full Name *</label>
                 <input type="text" id="name" name="name" required>
             </div>
-            
+           
             <div class="form-group">
                 <label for="email">Email ID *</label>
                 <input type="email" id="email" name="email" required>
             </div>
-            
+           
             <div class="form-group">
                 <label for="phone">Phone Number *</label>
                 <input type="tel" id="phone" name="phone" required>
             </div>
-            
+           
             <div class="form-group">
                 <label for="whatsapp">WhatsApp Number *</label>
                 <input type="tel" id="whatsapp" name="whatsapp" required>
             </div>
-            
+           
             <div class="form-group">
                 <label for="college">Name of the College *</label>
                 <input type="text" id="college" name="college" required>
             </div>
-            
+           
             <div class="form-group">
                 <label for="year">Year of Study *</label>
                 <select id="year" name="year" required>
@@ -260,24 +288,25 @@
                     <option value="2">2nd Year</option>
                     <option value="3">3rd Year</option>
                     <option value="4">4th Year</option>
-                    <option value="5">5th Year</option>
                 </select>
             </div>
-            
+           
             <div class="form-group">
                 <label for="department">Department Name *</label>
                 <select id="department" name="department" required>
                     <option value="">Select Department</option>
                     <option value="civil">Civil Engineering</option>
                     <option value="cse">Computer Science and Engineering</option>
+                    <option value="aids">Artificial Intelligence & Data Science</option>
                     <option value="ece">Electronics and Communication Engineering</option>
                     <option value="eee">Electrical and Electronics Engineering</option>
                     <option value="it">Information Technology</option>
                     <option value="mech">Mechanical Engineering</option>
                     <option value="sh">Science & Humanities</option>
+                    <option value="mba">Masters of Business Administration</option>
                 </select>
             </div>
-            
+           
             <!-- Department-specific options as checkboxes -->
             <div id="dept-specific-options" class="form-group hidden">
                 <label>Select Options * (Choose 2-3 options)</label>
@@ -286,12 +315,12 @@
                 </div>
                 <input type="hidden" id="selected-dept-options" name="selected-dept-options">
             </div>
-            
+           
             <div class="form-group">
                 <label for="project-link">Project/Paper Link (Google Drive link only) *</label>
                 <input type="url" id="project-link" name="project-link" placeholder="https://drive.google.com/..." required>
             </div>
-            
+           
             <div class="form-group">
                 <label>Mode of Payment *</label>
                 <div class="payment-options">
@@ -304,15 +333,15 @@
                 </div>
                 <input type="hidden" id="payment-mode" name="payment-mode">
             </div>
-            
+           
             <button type="button" id="submit-btn" onclick="submitForm()">Complete Registration</button>
         </div>
-        
+       
         <div class="loader" id="loader">
             <div></div>
             <p>Processing your registration...</p>
         </div>
-        
+       
         <div id="success-message" class="success-message hidden">
             <h2>Registration Successful!</h2>
             <div id="offline-success" class="hidden">
@@ -328,77 +357,83 @@
         </div>
     </div>
 
+
     <!-- Razorpay script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-    
+   
     <script>
         // Department-specific options
         const departmentOptions = {
-            civil: ["Structural Engineering", "Transportation Engineering", "Environmental Engineering", "Geotechnical Engineering"],
-            cse: ["Artificial Intelligence", "Machine Learning", "Web Development", "Cybersecurity", "Cloud Computing", "Data Science"],
-            ece: ["VLSI Design", "Embedded Systems", "Communication Systems", "Signal Processing", "IoT"],
-            eee: ["Power Systems", "Control Systems", "Power Electronics", "Renewable Energy", "Electric Vehicles"],
-            it: ["Software Development", "Network Security", "Database Management", "Cloud Computing", "Big Data"],
-            mech: ["Thermal Engineering", "Design Engineering", "Manufacturing", "Automation & Robotics", "CAD/CAM"],
-            sh: ["Mathematics", "Physics", "Chemistry", "English", "Economics"]
+            civil: ["Project Presentation", "Paper Presentstion", "CAD Master", "Fun Series", "Watery Rocketry", "Mr.Mechanic"],
+            cse: ["Paper Presentstion", "Project Presentation", "Google Hunt", "Crash Your Codes", "Web Master", "Gaming"],
+            aids: ["Paper Presentstion", "Project Presentation", "Google Hunt", "Crash Your Codes", "Web Master", "Gaming"],
+            ece: ["Paper Presentstion", "Project Presentation", "Tech Connection", "Circuit Debugging", "Technical Quiz", "Treasure Hunt"],
+            eee: ["Paper Presentstion", "Project Presentation", "Tech Connection", "Circuit Debugging", "Technical Quiz", "Treasure Hunt"],
+            it: ["Paper Presentstion", "Project Presentation", "Google Hunt", "Crash Your Codes", "Web Master", "Gaming"],
+            mech: ["Project Presentation", "Paper Presentstion", "CAD Master", "Fun Series", "Watery Rocketry", "Mr.Mechanic"],
+            sh: ["Paper Presentstion", "Fun Quiz", "Technical Debate", "Pencil Sketch & Painting", "Math Puzzles", "Karaoke Singing", "Drama & Mime"],
+            mba: ["Paper Presentstion", "Best Manager", "Business Quiz", "ADZAP", "Corporate Walk", "Corporate Stall", "Treasure Hunt"],
         };
+
 
         // Load department-specific options as checkboxes
         document.getElementById('department').addEventListener('change', function() {
             const deptValue = this.value;
             const deptOptionsContainer = document.getElementById('dept-options-container');
             const deptOptionsDiv = document.getElementById('dept-specific-options');
-            
+           
             if (deptValue && departmentOptions[deptValue]) {
                 // Clear previous options
                 deptOptionsContainer.innerHTML = '';
-                
+               
                 // Add new options as checkboxes
                 departmentOptions[deptValue].forEach(option => {
                     const optionId = option.toLowerCase().replace(/\s+/g, '-');
-                    
+                   
                     const checkboxItem = document.createElement('div');
                     checkboxItem.className = 'checkbox-item';
-                    
+                   
                     const checkbox = document.createElement('input');
                     checkbox.type = 'checkbox';
                     checkbox.id = optionId;
                     checkbox.value = option;
                     checkbox.name = 'dept-options';
                     checkbox.addEventListener('change', updateSelectedOptions);
-                    
+                   
                     const label = document.createElement('label');
                     label.htmlFor = optionId;
                     label.textContent = option;
-                    
+                   
                     checkboxItem.appendChild(checkbox);
                     checkboxItem.appendChild(label);
-                    
+                   
                     deptOptionsContainer.appendChild(checkboxItem);
                 });
-                
+               
                 deptOptionsDiv.classList.remove('hidden');
             } else {
                 deptOptionsDiv.classList.add('hidden');
             }
         });
 
+
         // Update selected options
         function updateSelectedOptions() {
             const checkboxes = document.querySelectorAll('input[name="dept-options"]:checked');
             const selectedOptions = Array.from(checkboxes).map(cb => cb.value);
-            
+           
             // Limit to maximum 3 selections
             if (checkboxes.length > 3) {
                 alert('You can select a maximum of 3 options');
                 this.checked = false;
                 return;
             }
-            
+           
             // Store selected options in hidden input
             document.getElementById('selected-dept-options').value = JSON.stringify(selectedOptions);
         }
+
 
         // Handle payment mode selection
         function selectPaymentMode(element) {
@@ -406,13 +441,14 @@
             document.querySelectorAll('.payment-option').forEach(opt => {
                 opt.classList.remove('selected');
             });
-            
+           
             // Add selected class to clicked option
             element.classList.add('selected');
-            
+           
             // Set the hidden input value
             document.getElementById('payment-mode').value = element.dataset.mode;
         }
+
 
         // Generate a unique registration number
         function generateRegistrationNumber() {
@@ -420,6 +456,7 @@
             const randomStr = Math.floor(Math.random() * 10000).toString().padStart(4, '0');
             return `EVT-${dateStr}-${randomStr}`;
         }
+
 
         // Submit form function
         function submitForm() {
@@ -437,40 +474,40 @@
                 projectLink: document.getElementById('project-link').value,
                 paymentMode: document.getElementById('payment-mode').value,
             };
-            
+           
             // Basic validation
-            if (!formData.name || !formData.email || !formData.phone || !formData.whatsapp || 
-                !formData.college || !formData.year || !formData.department || 
+            if (!formData.name || !formData.email || !formData.phone || !formData.whatsapp ||
+                !formData.college || !formData.year || !formData.department ||
                 (formData.deptOptions.length < 1) || !formData.projectLink || !formData.paymentMode) {
                 alert('Please fill all required fields');
                 return;
             }
-            
+           
             // Check if at least 1 and at most 3 department options are selected
             if (formData.deptOptions.length < 1 || formData.deptOptions.length > 3) {
                 alert('Please select between 1 and 3 department options');
                 return;
             }
-            
+           
             // Validate Google Drive link
             if (!formData.projectLink.includes('drive.google.com')) {
                 alert('Please enter a valid Google Drive link');
                 return;
             }
-            
+           
             // Show loader
             document.getElementById('loader').style.display = 'block';
             document.getElementById('registration-form').style.opacity = '0.5';
             document.getElementById('submit-btn').disabled = true;
-            
+           
             // Add registration number for data to be sent to server
             formData.registrationNumber = generateRegistrationNumber();
-            
+           
             // Simulate sending data to server (MongoDB)
             setTimeout(() => {
                 // In a real app, you would use fetch or axios to send data to your server
                 console.log('Sending data to MongoDB:', formData);
-                
+               
                 // Handle different payment modes
                 if (formData.paymentMode === 'online') {
                     // Process online payment with Razorpay
@@ -482,13 +519,14 @@
             }, 1500);
         }
 
+
         // Process Razorpay payment
         function processRazorpayPayment(formData) {
             // In a real app, you would make an API call to your server to create an order
             // and get the order ID. Here we're simulating that.
-            
+           
             const paymentAmount = 500; // Amount in paise (₹500)
-            
+           
             // Razorpay configuration
             const options = {
                 key: "rzp_test_YOUR_RAZORPAY_KEY", // Replace with your actual Razorpay key
@@ -500,14 +538,14 @@
                 handler: function(response) {
                     // This function runs after successful payment
                     console.log("Payment successful:", response);
-                    
+                   
                     // In a real app, you would verify the payment on the server
                     // Here we're simulating that process
-                    
+                   
                     // Add payment details to formData
                     formData.paymentId = response.razorpay_payment_id;
                     formData.paymentStatus = "paid";
-                    
+                   
                     // Complete registration
                     completeRegistration(formData, false);
                 },
@@ -528,39 +566,40 @@
                     }
                 }
             };
-            
+           
             // Initialize Razorpay
             const razorpay = new window.Razorpay(options);
             razorpay.open();
         }
 
+
         // Complete registration process
         function completeRegistration(formData, showRegNumber) {
             // In a real app, this would be done on your server
             console.log("Registration completed:", formData);
-            
+           
             // Hide loader
             document.getElementById('loader').style.display = 'none';
-            
+           
             // Show success message
             document.getElementById('registration-form').classList.add('hidden');
             document.getElementById('success-message').classList.remove('hidden');
-            
+           
             if (showRegNumber) {
                 // Show registration number for offline payment
                 document.getElementById('offline-success').classList.remove('hidden');
                 document.getElementById('registration-number').textContent = formData.registrationNumber;
-                
+               
                 // In a real app, you would trigger email sending from your server
                 console.log("Sending email for offline payment with registration number:", formData.registrationNumber);
             } else {
                 // Online payment success message
                 document.getElementById('online-success').classList.remove('hidden');
-                
+               
                 // In a real app, you would trigger email sending from your server
                 console.log("Sending email for online payment");
             }
-            
+           
             // In a real application, you would make an API call to your server to:
             // 1. Save registration data to MongoDB
             // 2. Send confirmation email

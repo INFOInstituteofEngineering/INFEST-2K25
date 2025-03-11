@@ -1,6 +1,7 @@
 document.getElementById('registrationForm').addEventListener('submit', async (e) => {
     e.preventDefault();
 
+
     const formData = {
         name: document.getElementById('name').value,
         email: document.getElementById('email').value,
@@ -13,6 +14,7 @@ document.getElementById('registrationForm').addEventListener('submit', async (e)
         paymentMode: document.getElementById('paymentMode').value
     };
 
+
     if (formData.paymentMode === 'online') {
         initiateRazorpayPayment(formData);
     } else if (formData.paymentMode === 'offline') {
@@ -24,16 +26,19 @@ document.getElementById('registrationForm').addEventListener('submit', async (e)
     }
 });
 
+
 function filterOptions() {
     const department = document.getElementById('department').value;
     console.log(`Selected Department: ${department}`);
     // Add logic here if you want to dynamically filter options based on department
 }
 
+
 function handlePaymentMode() {
     const paymentMode = document.getElementById('paymentMode').value;
     console.log(`Payment Mode: ${paymentMode}`);
 }
+
 
 async function initiateRazorpayPayment(formData) {
     const response = await fetch('http://localhost:3000/create-order', {
@@ -42,6 +47,7 @@ async function initiateRazorpayPayment(formData) {
         body: JSON.stringify({ amount: 50000 }) // Amount in paise (e.g., 500 INR)
     });
     const order = await response.json();
+
 
     const options = {
         key: 'YOUR_RAZORPAY_KEY_ID', // Replace with your Razorpay Key ID
@@ -68,19 +74,23 @@ async function initiateRazorpayPayment(formData) {
         theme: { color: '#007bff' }
     };
 
+
     const rzp = new Razorpay(options);
     rzp.open();
 }
+
 
 async function completeOfflineRegistration(formData) {
     const ticketNumber = `TICKET-${Math.random().toString(36).substr(2, 9).toUpperCase()}`;
     const dataWithTicket = { ...formData, ticketNumber };
     await saveToMongoDB(dataWithTicket);
 
+
     document.getElementById('ticketValue').textContent = ticketNumber;
     document.getElementById('ticketNumber').style.display = 'block';
     alert('Offline registration successful! Check your email for confirmation.');
 }
+
 
 async function saveToMongoDB(data) {
     const response = await fetch('http://localhost:3000/register', {
