@@ -24,14 +24,14 @@ const About = () => {
           </div>
 
           <div className="relative shadow-2xl">
-            <img src={AboutImg} width={500} className="rounded-lg" />
+            <img src={AboutImg} width={500} className="rounded-xl" />
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-500 to-green-500 opacity-50 rounded-[10px] "></div>
 
             <div className=" absolute top-[60%] right-[50%] w-[60%] md:w-[70%] md:right-[40%]">
-              <div className=" bg-white p-1 px-2 m-2 w-auto rounded-md font-bold shadow-xl border-gray-200 border">
+              <div className="bg-blue-500 bg-opacity-50 p-1 px-2 m-2 w-auto rounded-full font-bold shadow-xl border-gray-200 border">
                 <p className=" flex items-center gap-2 md:text-[14px]"><Event className=" text-blue-500"/>25+ Events on INFEST 2K25</p>
               </div>
-              <div className=" bg-white p-1 px-2 m-2 w-[75%] rounded-md font-bold  shadow-xl border-gray-200 border">
+              <div className="bg-green-500 bg-opacity-50p-1 px-2 m-2 w-[75%] rounded-full font-bold  shadow-xl border-gray-200 border">
                 <p className=" flex items-center gap-2 md:text-[14px]"><Prize className=" text-yellow-600"/>Exiciting Prizes</p>
               </div>
             </div>
