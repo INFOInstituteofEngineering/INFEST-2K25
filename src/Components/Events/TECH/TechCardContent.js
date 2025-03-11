@@ -11,8 +11,8 @@ const TechCardContent = [
     {
         id:1,
         img:paperpresentation,
-        coordinator:"",
-        mobile:"",
+        coordinator:"Mr. Samson Durai",
+        mobile:"+91 9629110972",
         eventTitle : "Paper Presentation",
         eventDesc : "A paper presentation is a formal way of sharing research findings, innovative ideas, or case studies with an audience in academic, professional, or technical settings. It involves presenting a well-researched paper through a structured oral talk, often supported by slides or visual aids. The goal is to communicate key insights effectively, engage the audience, and encourage discussions. ",
         rules:[
@@ -26,7 +26,7 @@ const TechCardContent = [
             "Name of the Institute & City.",
             "Each team is allocated a total presentation time of 3 – 5 minutes.",
             "Submissions must be in the form of a POWER POINT PRESENTATION.",
-            "Students should submit the PPT before 2 days via mail(infest2kcse@gmail.com).",
+            "Students should submit the PPT before 2 days via mail(infest2k25cse@gmail.com).",
         ],
         criteria:[
             "Clarity.",
@@ -36,8 +36,8 @@ const TechCardContent = [
     {
         id:2,
         img:projecpresentation,
-        coordinator:"",
-        mobile:"",
+        coordinator:"Mr. Ajay Vetri N J",
+        mobile:"+91 9789413779",
         eventTitle : "Project Presentation",
         eventDesc : "A project presentation is a structured way of showcasing a project’s objectives, progress, outcomes, and impact to an audience. It is commonly used in academic, business, and technical settings to communicate ideas, problem-solving approaches, and innovations. The presentation typically includes visual aids, such as slides, charts, and prototypes, to enhance understanding and engagement.",
         rules:[
@@ -55,8 +55,8 @@ const TechCardContent = [
     {
         id:3,
         img:googlehunt,
-        coordinator:"",
-        mobile:"",
+        coordinator:"Ms. Sri Dharshana",
+        mobile:"+91 6379684849",
         eventTitle : "Google Hunt",
         eventDesc : '"Google Hunt" is a fast-paced competition with two rounds: "Google Search Challenge" and "Google Feats." It is all about being fast and precise with Google search skills',
         rules:[
@@ -82,8 +82,8 @@ const TechCardContent = [
     {
         id:4,
         img:crashcode,
-        coordinator:"Bala santhosh P",
-        mobile:"+918870702519",
+        coordinator:"Mr. Sivashanakaran",
+        mobile:"+91 6384048586",
         eventTitle : "Crash Your Code",
         eventDesc : "Crash Your Code is an exciting coding challenge or debugging competition where participants intentionally test, break, or improve their code by identifying vulnerabilities, errors, or inefficiencies. It is designed to enhance problem-solving skills, debugging expertise, and coding efficiency in a fun and competitive environment.     ",
         rules:[
@@ -106,8 +106,8 @@ const TechCardContent = [
     {
         id:5,
         img:webmaster,
-        coordinator:"",
-        mobile:"",
+        coordinator:"Ms. Elavarasi M",
+        mobile:"+91 8220679393",
         eventTitle : "Web Master",
         eventDesc : "Web Master is an event where the participants have to express their web development skills by creating a website with given requirements.",
         rules:[
@@ -131,8 +131,8 @@ const TechCardContent = [
     {
         id:6,
         img:game,
-        coordinator:"",
-        mobile:"",
+        coordinator:"Mr. Rohith S",
+        mobile:"+91 9626490046",
         eventTitle : "Gaming",
         eventDesc : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nesciunt ipsa officiis suscipit quia exercitationem laborum excepturi nostrum officia et incidunt molestiae, rerum possimus expedita? Sit quaerat aliquam minus in.",
         rules:[
