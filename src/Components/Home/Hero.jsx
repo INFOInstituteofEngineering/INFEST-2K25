@@ -1,5 +1,5 @@
 import React from "react";
-import InfoLogo from "../../assets/logo.png";
+import Logo from "../../assets/logo.png";
 import ParticleComponent from "./Particles";
 import { Link } from 'react-router-dom';
 
@@ -21,7 +21,7 @@ const Hero = ({ scrollToContact }) => {
                 <div>
 
                     <div className=" relative">
-                        <div className="mx-auto mt-[7%] pb-10 z-20 flex flex-col items-center justify-center md:h-screen">
+                        <div className="pt-20 mx-auto mt-[7%] pb-10 z-20 flex flex-col items-center justify-center md:h-screen">
                             <h1
                                 className="text-center my-[1.5%] text-[25px] text-blue-500 font-bold"
                                 style={NotSelected}
@@ -30,7 +30,7 @@ const Hero = ({ scrollToContact }) => {
                             </h1>
 
                             <img
-                                src={InfoLogo}
+                                src={Logo}
                                 alt="Infest_2k25"
                                 style={NotSelected}
                                 className="mx-auto w-[30%] sm:w-[60%]"
@@ -43,11 +43,11 @@ const Hero = ({ scrollToContact }) => {
                             </h1>
 
                             <div className=" flex flex-row sm:flex-col  justify-evenly items-center mx-auto text-center my-[1%] w-[45%] font-semibold">
-                                <div className=" text-[20px] hover:shadow-lg sm:my-[5%] w-[250px] px-[30px] py-[15px] border-[2px] rounded-[8px] text-white bg-blue-500 border-blue-500 cursor-pointer">
+                                <div className=" text-[20px] hover:shadow-lg sm:my-[5%] w-[250px] px-[30px] py-[15px] border-[2px] rounded-[50px] text-white bg-blue-500 border-blue-500 cursor-pointer hover:bg-black transform transition-all duration-300 hover:scale-105">
                                     <Link to={'/event/tech'}>Register&#160;Events</Link>
                                 </div>
 
-                                <div className=" text-[20px] hover:shadow-lg sm:my-[5%] w-[250px] px-[30px] py-[15px] border-[2px] rounded-[8px] border-green-500 cursor-pointer text-green-500"
+                                <div className=" text-[20px] hover:shadow-lg sm:my-[5%] w-[250px] px-[30px] py-[15px] border-[2px] rounded-[50px] text-white bg-green-500 border-black-500 cursor-pointer hover:bg-black transform transition-all duration-300 hover:scale-105"
                                 >
                                     <Link to={'#contact'} onClick={() => scrollToContact()}>Contact&#160;Us</Link>
                                 </div>
