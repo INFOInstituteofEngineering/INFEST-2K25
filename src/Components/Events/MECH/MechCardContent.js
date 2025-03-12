@@ -11,7 +11,7 @@ const MechCardContent = [
     {
         id:1,
         img:projecpresentation,
-        coordinator:"",
+        coordinator:" ",
         mobile:"",
         eventTitle : "Paper Presentation",
         eventDesc : "Paper presentation is an event where the participants are required to make a paper about a certain topic and then present it in front of a jury. ",
@@ -76,6 +76,15 @@ const MechCardContent = [
         mobile:"",
         eventTitle : "Fun Series",
         eventDesc : 'The students can have their fun and enjoyment in playing the series of games. Games will be an on spot event. Once you have registered you can participate in fun series games on the symposium date.',
+        rules:[
+            "Maximum 2 students are allowed to participate for modelling",
+            "30 Mts duration will be provided for completing the assigned task",
+            "Prelims stages may be considered if more number participants is registered",
+            " Usage of Phone is restricted"
+        ],
+        criteria:[
+            " Maximum Completion of task within the duration"
+        ]
     },
     {
         id:5,
