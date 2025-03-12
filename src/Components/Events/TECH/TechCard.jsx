@@ -13,7 +13,7 @@ const TechCard = () => {
 
   const handleMouseEnter = (id) => {
     setHovered(id);
-  };
+  }; 
 
   const handleMouseLeave = () => {
     setHovered(null);
