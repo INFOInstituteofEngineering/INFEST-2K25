@@ -153,5 +153,4 @@ const TechCardContent = [
         ]
     },
 ];
-
 export default TechCardContent;
