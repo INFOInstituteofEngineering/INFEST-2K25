@@ -8,7 +8,7 @@ import { GoDotFill as DotIcon } from "react-icons/go";
 import { FaWhatsapp as WhatsappIcon } from "react-icons/fa";
 import logo from "../../assets/logo.png";
 
-const EventDetailsComponent = ({ title, desc, img,rules,criteria,mobile,coordinator }) => {
+const EventDetailsComponent = ({ title, desc, img, rules, criteria, mobile, coordinator, studentCoordinator, stdmobile, email }) => {
   document.documentElement.scrollTop = 0;
   return (
     <div className="md:mt-[20%]  mt-[9%] flex flex-col gap-4  mb-[4%] overflow-x-hidden">
@@ -121,8 +121,6 @@ const EventDetailsComponent = ({ title, desc, img,rules,criteria,mobile,coordina
   <h1>{email}</h1>
   </div>
       </div>
-
-    </div>
   );
 };
 
@@ -171,6 +169,8 @@ const EventDetails = () => {
           mobile={EventContentDetails.mobile}
           stdmobile={EventContentDetails.stdmobile}
           coordinator={EventContentDetails.coordinator}
+          studentCoordinator={EventContentDetails.studentCoordinator}
+          email={EventContentDetails.email}
         />
       </div>
     </div>
