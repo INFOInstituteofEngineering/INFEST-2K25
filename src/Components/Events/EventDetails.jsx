@@ -139,8 +139,10 @@ const EventDetails = () => {
         return null;
     }
   };
+  
 
   const EventContentDetails = findDept();
+  
 
   return (
     <div>
