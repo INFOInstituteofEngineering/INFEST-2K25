@@ -61,9 +61,9 @@ html, body{
 }
 
 .slider .slide-track {
-    animation: scrollrl 30s linear infinite;
+    animation: scrollrl 20s linear infinite;
     display: flex;
-    width: calc(250px * 14);
+    width: calc(250px * 13);
 }
 
 .slider .slide {
@@ -76,7 +76,7 @@ html, body{
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-250px * 7));
+        transform: translateX(calc(-250px * 11));
     }
 }
 
@@ -86,6 +86,6 @@ html, body{
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(250px * 7));
+        transform: translateX(calc(250px * 5));
     }
 }

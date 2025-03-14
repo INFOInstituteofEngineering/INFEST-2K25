@@ -6,6 +6,7 @@ const Coordinators1 = [
     { name: "Nandhana N", image: Avatar },//yes
     { name: "Aashika K S", image: Avatar },//yes
     { name: "Poovarasi R", image: Avatar },//yes
+    { name: "Ramana A", image: Avatar },//yes
     { name: "Lavanya S", image: Avatar },//yes
     { name: "Deepajothy", image: Avatar },//yes
     { name: "Abijith J", image: Avatar },//yes
@@ -19,7 +20,9 @@ const Coordinators1 = [
     { name: "Bhoomish R", image: Avatar },//yes
     { name: "Vaitheeshwaran S", image: Avatar },//yes
     { name: "Logeshwaran L", image: Avatar },//yes
-    { namw: "Anu M", image: Avatar },//yes
+    { name: "Anu M", image: Avatar },//yes
+    
+    
     
 ]
 const Coordinators2 = [
@@ -28,6 +31,7 @@ const Coordinators2 = [
     { name: "Sivashankaran R", image: Avatar },//yes
     { name: "Gokul V M", image: Avatar },//yes
     { name: "Rohith S", image: Avatar },//yes
+    { name: "Guhan E", image: Avatar },//yes
     { name: "Alphin V T", image: Avatar },//yes
     { name: "Jithu Saaron B", image: Avatar },//yes
     { name: "Aswin Raj", image: Avatar },//yes
@@ -42,6 +46,7 @@ const Coordinators2 = [
     { name: "Yageshwaran N", image: Avatar },//yes
     { name: "Sham J", image: Avatar },//yes
     { name: "Meganathan V", image: Avatar },//yes
+    
 
 ]
 const Coordinators3 = [
@@ -51,6 +56,7 @@ const Coordinators3 = [
     { name: "Vijay T", image: Avatar },//yes
     { name: "Hariharapandian S", image: Avatar },//yes
     { name: "Valanprakash R", image: Avatar },//yes
+    { name: "Sivanesh R", image: Avatar },//yes
     { name: "Gopinath D", image: Avatar },//yes
     { name: "Suryaprakash P", image: Avatar },//yes
     { name: " Vishwa R", image: Avatar },//yes
@@ -65,6 +71,7 @@ const Coordinators3 = [
     { name: "Prasanth K", image: Avatar },//yes
     { name: "Sridharan M", image: Avatar },//yes
     { name: "Senthilmurugan S", image: Avatar },//yes
+    
    
 ]
 export {Coordinators1,Coordinators2,Coordinators3};
