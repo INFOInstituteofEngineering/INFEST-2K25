@@ -27,9 +27,17 @@ import techquiz from "./Event/Electrical/quiz.jpg";
 import t_connection from "./Event/Electrical/tech_connection.jpg";
 import t_hunt from "./Event/Electrical/treasure_hunt.jpg";
 
+//SH Images
+import funquiz from "./Event/SH/funquiz.jpg";
+import debate from "./Event/SH/debate.jpg";
+import math_puzzles from "./Event/SH/math_puzzles.jpg";
+import mime from "./Event/SH/mime.jpg";
+import pencil_sketch from "./Event/SH/pencil_sketch.jpg";
+import singing from "./Event/SH/singing.jpg";
+
 //Shades
 import topshade from "./Event/topshade.png";
 import bottomshade from "./Event/bottomshade.png";
 import hoverbottom from "./Event/hoverbottom.png";
 
-export {paperpresentation,t_connection,techquiz,t_hunt,circuit,paperbanner,business_quiz,bottomshade,corporate_walk,treasure_hunt,corporate_stall,hoverbottom,topshade,projecpresentation,crashcode,game,googlehunt,webmaster,best_manager,adzap,cad_master,fun,mr_mechanic,water_rocket}
+export {paperpresentation,t_connection,techquiz,t_hunt,circuit,paperbanner,business_quiz,bottomshade,corporate_walk,treasure_hunt,corporate_stall,hoverbottom,topshade,projecpresentation,crashcode,game,googlehunt,webmaster,best_manager,adzap,cad_master,fun,funquiz,debate,math_puzzles,pencil_sketch,mime,singing,mr_mechanic,water_rocket}
