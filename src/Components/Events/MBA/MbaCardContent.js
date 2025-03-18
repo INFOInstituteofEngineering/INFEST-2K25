@@ -5,7 +5,7 @@ import {
     business_quiz,
     corporate_walk,
     corporate_stall,
-    treasure_hunt,
+    treasure_hunt
 } from "../../../index.js";
 
 const MbaCardContent = [
