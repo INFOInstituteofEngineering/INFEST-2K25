@@ -7,7 +7,7 @@ import {
   math_puzzles,
   singing,
   mime,
-} from "../../../assets/index.js";
+} from "../../../index.js";
 
 const defaultBanner = "path/to/default/banner.jpg"; // Default banner path
 

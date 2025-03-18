@@ -5,7 +5,7 @@ import {
     crashcode,
     game,
     googlehunt
-} from "../../../assets/index.js";
+} from "../../../index.js";
 
 const TechCardContent = [{
         id: 1,

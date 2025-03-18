@@ -5,7 +5,7 @@ import {
     circuit,
     techquiz,
     t_connection
-} from "../../../assets/index";
+} from "../../../index";
 
 const ElectricalCardContent = [{
     id: 1,

@@ -6,7 +6,7 @@ import {
     corporate_walk,
     corporate_stall,
     treasure_hunt,
-} from "../../../assets/index.js";
+} from "../../../index.js";
 
 const MbaCardContent = [
     {

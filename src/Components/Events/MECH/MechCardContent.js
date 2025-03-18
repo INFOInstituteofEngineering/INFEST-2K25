@@ -5,7 +5,7 @@ import {
     fun,
     mr_mechanic,
     water_rocket
-} from "../../../assets/index.js";
+} from "../../../index.js";
 
 const MechCardContent = [{
         id: 1,
