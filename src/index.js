@@ -8,7 +8,7 @@ import googlehunt from "./Event/Tech/google.jpg";
 import webmaster from "./Event/Tech/web.jpg";
 
 //MBA Images
-import adzap from "../asset/adzap-DooHUeaS.jpg";
+import adzap from "../assets/Event/MBA/adzap.jpg";
 import best_manager from "../assets/Event/Mba/best_manager.jpg";
 import business_quiz from "../assets/Event/Mba/business_quiz.jpg";
 import corporate_walk from "../assets/Event/Mba/corporate_walk.jpg";
