@@ -12,7 +12,7 @@ const MbaCardContent = [
     {
         id: 1,
         img: paperpresentation,
-        banner: "C:\\Users\\Jithu Saaron\\Documents\\Git Repository\\INFEST-2K25\\src\\assets\\Event\\MBA\\paperpresentation.jpg", // Add the banner property
+        //banner: "C:\\Users\\Jithu Saaron\\Documents\\Git Repository\\INFEST-2K25\\src\\assets\\Event\\MBA\\paperpresentation.jpg", // Add the banner property
         coordinator: "Mr.S.Kanagaraj-AP/MBA",
         mobile: "9585444456",
         studentCoordinator: "Abijith.J - Ist MBA",
@@ -36,7 +36,7 @@ const MbaCardContent = [
     {
         id: 2,
         img: best_manager,
-        banner: "C:\\Users\\Jithu Saaron\\Documents\\Git Repository\\INFEST-2K25\\src\\assets\\Event\\MBA\\best_manager.jpg", // Add the banner property
+       // banner: "C:\\Users\\Jithu Saaron\\Documents\\Git Repository\\INFEST-2K25\\src\\assets\\Event\\MBA\\best_manager.jpg", // Add the banner property
         coordinator: "Dr.M.Yasotha-HOD/MBA",
         mobile: "9894579778",
         studentCoordinator: "Akilesh.S - Ist MBA",
@@ -59,7 +59,7 @@ const MbaCardContent = [
     {
         id: 3,
         img: business_quiz,
-        banner: "C:\\Users\\Jithu Saaron\\Documents\\Git Repository\\INFEST-2K25\\src\\assets\\Event\\MBA\\business_quiz.jpg", // Add the banner property
+        //banner: "C:\\Users\\Jithu Saaron\\Documents\\Git Repository\\INFEST-2K25\\src\\assets\\Event\\MBA\\business_quiz.jpg", // Add the banner property
         coordinator: "Ms.K.Dhanyashalini-AP/MBA",
         mobile: "93849496224",
         studentCoordinator: "Karthic.L - Ist MBA",
@@ -79,7 +79,7 @@ const MbaCardContent = [
     {
         id: 4,
         img: adzap,
-        banner: "C:\\Users\\Jithu Saaron\\Documents\\Git Repository\\INFEST-2K25\\src\\assets\\Event\\MBA\\adzap.jpg", // Add the banner property
+        //banner: "C:\\Users\\Jithu Saaron\\Documents\\Git Repository\\INFEST-2K25\\src\\assets\\Event\\MBA\\adzap.jpg", // Add the banner property
         coordinator: "Ms.K.Padmapriya-AP/MBA",
         mobile: "9361573529",
         studentCoordinator: "Hamshavi.M - Ist MBA",
@@ -104,7 +104,7 @@ const MbaCardContent = [
     {
         id: 5,
         img: corporate_walk,
-        banner: "C:\\Users\\Jithu Saaron\\Documents\\Git Repository\\INFEST-2K25\\src\\assets\\Event\\MBA\\corporate_walk.jpg", // Add the banner property
+        //banner: "C:\\Users\\Jithu Saaron\\Documents\\Git Repository\\INFEST-2K25\\src\\assets\\Event\\MBA\\corporate_walk.jpg", // Add the banner property
         coordinator: "Ms.K.Padmapriya-AP/MBA",
         mobile: "9361573529",
         studentCoordinator: "Deepajothi.G -IInd MBA",
@@ -132,7 +132,7 @@ criteria: [
     {
         id: 6,
         img: corporate_stall,
-        banner: "C:\\Users\\Jithu Saaron\\Documents\\Git Repository\\INFEST-2K25\\src\\assets\\Event\\MBA\\corporate_stall.jpg", // Add the banner property
+        //banner: "C:\\Users\\Jithu Saaron\\Documents\\Git Repository\\INFEST-2K25\\src\\assets\\Event\\MBA\\corporate_stall.jpg", // Add the banner property
         coordinator: "Ms.K.Padmapriya-AP/MBA",
         mobile: "9361573529",
         studentCoordinator: "Dhanushkodi.S-IInd MBA",
@@ -157,7 +157,7 @@ criteria: [
     {
         id: 7,
         img: treasure_hunt,
-        banner: "C:\\Users\\Jithu Saaron\\Documents\\Git Repository\\INFEST-2K25\\src\\assets\\Event\\MBA\\treasure_hunt.jpg", // Add the banner property
+        //banner: "C:\\Users\\Jithu Saaron\\Documents\\Git Repository\\INFEST-2K25\\src\\assets\\Event\\MBA\\treasure_hunt.jpg", // Add the banner property
         coordinator: "Mr.S.Kanagaraj-AP/MBA",
         mobile: "9585444456",
         studentCoordinator: "Soorya.R - Ist MBA",
