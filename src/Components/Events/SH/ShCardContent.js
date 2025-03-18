@@ -114,8 +114,8 @@ const ShCardContent = [
     coordinator: "Mrs. P.Sulochana Devi AP/MATHS",
     studentCoordinator: "Mr.V.Meganathan Ist Year CSE",
     email: "infest2k25sandh@gmail.com",
-    stdmobile: "",
-    mobile:"",
+    stdmobile: "8870593386",
+    mobile:"9715142264",
     eventTitle: "Pencil Sketch & Painting",
     eventDesc:
       "To express their ideas and emotions, with the creation of certain aesthetic qualities, in a two-dimensional visual language.",
